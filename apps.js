@@ -7,13 +7,13 @@ const compScorePara = document.querySelector("#comp-score");
 const choices = document.querySelectorAll(".choice"); //  used to select and retrieve  
 const msg = document.querySelector("#msg");
 const genComputerChoice = () =>{
-    const options = ["rock","paper","Scissors"];
+    const options = ["Rock","Paper","Scissors"];
     const randIdx = Math.floor(Math.random()*3);
     return options[randIdx];
 };
 
 const drawGame = () => {
-    console.log("game was draw.");
+    console.log("Game was draw.");
     msg.innerText = "Game was Draw.Play again.";
 };
 
@@ -43,17 +43,17 @@ const playGame = (userChoice) =>{
     }
     else{
         let userWin = true;
-        if(userChoice === "rock"){
+        if(userChoice === "Rock"){
             // scissors, paper
-            userWin = compChoice === "paper" ? false : true;
+            userWin = compChoice === "Paper" ? false : true;
         }
-        else if(userChoice === "paper"){
+        else if(userChoice === "Paper"){
             // rock, scissors
-            userWin = compChoice === "scissors" ? false :true;
+            userWin = compChoice === "Scissors" ? false :true;
         }
         else{
             // rock, paper
-            userWin = compChoice === "rock" ? false : true;
+            userWin = compChoice === "Rock" ? false : true;
         }
         showWinner(userWin, userChoice,compChoice);
     }
