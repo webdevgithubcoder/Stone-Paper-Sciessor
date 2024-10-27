@@ -4,7 +4,7 @@ let compscore = 0;
 const userScorePara = document.querySelector("#user-score");
 const compScorePara = document.querySelector("#comp-score");
 
-const choices = document.querySelectorAll(".choice"); //  used to select and retrieve  
+const choices = document.querySelectorAll(".choices"); //  used to select and retrieve  
 const msg = document.querySelector("#msg");
 const genComputerChoice = () =>{
     const options = ["Rock","Paper","Scissors"];
